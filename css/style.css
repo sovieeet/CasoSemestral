@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight:600;
+}
+/*BANNER*/
+section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner {
+    position: relative;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    min-height: 80vh;
+    text-shadow: 3px 3px 2px #6f7518;
+    -webkit-text-stroke: 1px #6f7518;
+     overflow: visible; 
+}
+
+.banner .banner-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/jardin.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+.banner .banner-img::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    content: '';
+}
+/*HEADER*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* FLEX */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 65px;
+    color: white;
+    z-index: 10;
+}
+
+header nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;  
+    display: block;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #6f7518;
+}
+
+header nav li {
+    margin: 0 15px;
+    float: left;
+    text-shadow: 3px 3px 2px #59b44f;
+}
+
+/*LOGO*/
+
+.logo img {
+    margin: -60px;
+    
+}
+
+.flores-contenido {
+    /* FLEX */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flores {
+    height:250px;
+}
+
+ul {
+    list-style: none;
+}
+
+.flores-contenido li {
+    padding: 20px;
+    height: 50px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+    margin-bottom: 220px;
+}
+
+.flores-izq {
+    flex-basis: 33%;
+}
+
+
+.flores-ctn {
+    flex-basis: 33%;
+}
+
+
+.flores-der {
+    flex-basis: 33%;
+}
+
+.florimg {
+    border-radius: 50%;
+    width: 33%;
+}
+
+.flores ul li {
+    text-align: center;
+}
+
+.tulimg {
+    width: 60%;
+}
+
+.alejandra {
+    color: rgb(254, 255, 204);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px rgb(218, 144, 101);
+}
+
+.romeo {
+    color: rgb(254, 255, 204);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px rgb(218, 144, 101);
+}
+
+.francisco {
+    color: rgb(254, 255, 204);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 3px 3px rgb(218, 144, 101);
+}
+
+.flores {
+    background-color: rgba(110, 68, 51, 0.781);
+    background-image: linear-gradient(rgb(12, 148, 153),#65e2bc);
+}
+
+/*sobre nosotros*/
+
+.sobre-nosotros{
+    /* FLEX */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #65e2bc, rgb(12, 148, 153));
+}
+
+.sobre-nosotros-title {
+    color: black;
+    text-shadow: 0px 0px 0px;
+    text-align: center;
+    font-size: 200%;
+    font-family: arial;
+    margin-bottom: 30px;
+}
+
+.sobre-nosotros-p {
+    color: black;
+    text-shadow: 0px 0px 0px;
+    text-align: center;
+    font-size: 150%;
+    font-family: aharoni;
+    margin-bottom: 30px;
+}
+
+/* CONTACTO */
+
+.contacto-contenido {
+    /* FLEX */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacto-titulo {
+    font-size: 50px;
+    margin-bottom: 0.8%;
+    text-transform: uppercase;
+    color: green;
+    text-shadow: 3px 3px 2px #6f7518;
+    -webkit-text-stroke: 1px yellow;
+}
+
+.contacto-contenido li {
+    height: 600px;
+    padding: 20px;
+}
+
+.contacto-izq {
+    flex-basis: 50%;
+}
+
+.contacto-der {
+    flex-basis: 50%;
+}
+
+/* FORMULARIO */
+
+input[type="text"],[type="number"],[type="file"],[type="password"] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgb(73, 138, 138);
+    resize: vertical;
+}
+
+#formulario {
+    margin: auto;
+    width: 40%;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.btn-verde {
+    background-color: green;
+}
+
+.btn-verde:hover{
+    background-color: rgb(6, 61, 6);
+}
+
+.btn-rojo {
+    background-color: red;
+}
+
+.btn-rojo:hover{
+    background-color: rgb(117, 5, 5);
+}
+
+.contacto-info {
+    color: black;
+    text-shadow: 0px 0px 0px;
+    text-align: center;
+    font-size: 130%;
+    font-family: aharoni;
+}
+
+.contacto-pd {
+    color: black;
+    text-shadow: 0px 0px 0px;
+    text-align: center;
+    font-size: 90%;
+    font-family: aharoni;
+    padding: 10px;
+}
+
+/* ----------aqui va todo lo de los productos ----------- */
+.productos {
+    /* FLEX */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom, #829c29, rgb(243, 145, 17));
+
+    
+    /* con este codigo ordenas los items hacia el lado */
+    flex-direction: row;    
+}
+
+.productos .tarjeta  {
+    margin: 130px;
+}
+
+.tarjeta {
+
+    background-color: rgb(94, 241, 192);
+    width: 200px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+.imagen-producto {
+    width: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.texto-tarjeta {
+    text-align: center;
+    margin-top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+
+.productos2 {
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom, rgb(243, 145, 17), #bad464);
+    flex-direction: row;    
+}
+
+.productos2 .tarjeta  {
+    margin: 130px;
+}
+
+.imagen-producto2 {
+    width: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.imagen-producto3 {
+    width: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+
+
+footer{
+    /* FLEX */
+ display: -webkit-flex;
+ display: -moz-flex;
+ display: -ms-flex;
+ display: -o-flex;
+ display: flex;
+ flex-direction: column;
+ align-items: initial;
+ text-align: end;
+ background-color: #829c29;
+ color: #f2f2f2;
+ padding: 20px 0;
+ margin-right: 5px;
+}
+
+.contacto {
+    /* FLEX */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin-top: 150px;
+  }
+  
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+    background: #43A047;
+  }
+  .form .message {
+    margin: 10px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  .form .register-form {
+    display: none;
+  }
+  body {
+    background-image: linear-gradient(to bottom, #829c29, rgb(243, 145, 17));
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }

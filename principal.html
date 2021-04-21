@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Neighborhood</title>
+    <!-- en el head van los links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="img/icono.png" width="100" height="100" alt="">
+            </div>
+            <nav>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="#seguimiento">Seguimiento Despacho</a></li>
+                <li><a href="Iniciar.html">Iniciar Sesión</a></li>
+            </nav>
+        </header>
+
+        <section class="banner">
+            <div class="banner-img"></div>
+            <h1>Jardinería</h1>
+            <h2>The Neighborhood</h2>
+        </section>
+
+        <section class="flores" id="flores">
+                <ul class="flores-contenido">
+                    <li class="flores-izq">
+                        <img class="florimg" src="img/girasol.jpg" alt="">
+                        <h3 class="alejandra">Muy buena tienda, vende lindas flores que adornan muy bien mi patio - Alejandra</h3>
+                    </li>
+                    <li class="flores-ctn">
+                        <img class="tulimg" src="img/tulipan.jpg" height="" alt="">
+                        <h3 class="romeo">Las flores de acá me ayudaron a conquistar a Julieta - Romeo</h3>
+                    </li>
+                    <li class="flores-der">
+                        <img class="florimg" src="img/girasol.jpg" height="" alt="">
+                        <h3 class="francisco">Me encantan los arreglos de esta jardinería, la recomiendo al 100% - Francisco</h3>
+                    </li>
+                </ul>
+        </section>
+        
+        <section class="sobre-nosotros">
+            <h1 class="sobre-nosotros-title">Sobre nosotros como jardinería</h1>
+                <p class="sobre-nosotros-p">Nuestra historia comenzó cuándo en nuestra comunidad
+                     de vecinos se nos ocurrió la idea de que debiamos ayudar a los niños
+                     con cáncer debido a que uno de nuestros vecinos tiene un niño con
+                     esta enfermedad medianamente avanzada, por lo que comenzamos a vender
+                     plantas, flores, maceteros y articulos de jardinería en las redes sociales
+                     (especificamente en Facebook) para ayudar a una fundación sin fines de lucro
+                     de niños con cáncer.
+                     Tenemos mucha variedad de plantas y flores para el jardín a precios accesibles para todos.
+                </p>
+
+        </section>
+        <!-- aqui van a ir los productos -->
+        <section class="productos">
+            <!-- estamos intentando crear una tarjeta -->
+            <div class="tarjeta">
+                <img class="imagen-producto" src="img/producto1.jpg" alt="">
+                <div class="texto-tarjeta">
+                    <h4 class="producto">Girasol</h4>
+                    <p class="texto">$25.000</p>
+                    <a href="" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img class="imagen-producto" src="img/producto2.jpg" alt="">
+                <div class="texto-tarjeta">
+                    <h4 class="producto">Ramo Campestre</h4>
+                    <p class="texto">$50.000</p>
+                    <a href="" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img class="imagen-producto" src="img/producto3.jpg" alt="">
+                <div class="texto-tarjeta">
+                    <h4 class="producto">Lilium Gerberas</h4>
+                    <p class="texto">$30.000</p>
+                    <a href="" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img class="imagen-producto" src="img/producto4.jpg" alt="">
+                <div class="texto-tarjeta">
+                    <h4 class="producto">Pescera de 20 Tulipanes Blancos </h4>
+                    <p class="texto">$40.000</p>
+                    <a href="" class="btn">Comprar</a>
+                </div>
+            </div>
+            </section>
+
+        <section class="contacto" id="contacto">
+            <h3 class="contacto-titulo">cotizaciones</h3>
+            <h3 class="contacto-info">¿Deseas cotizar arreglos personalizados o para eventos? ¡Contactanos!</h3>
+            <ul class="contacto-contenido">
+                <li class="contacto-izq">
+                    <div id="formulario">
+                        <form action="consulta.html" method="POST">
+                                <label for="txtNombres">Nombres:</label>
+                                <input type="text" name="txtNombres" id="txtNombres">
+                
+                                <label for="txtApellidos">Apellidos:</label>
+                                <input type="text" name="txtApellidos" id="txtApellidos">
+                
+                                <label for="txtTelefono">Número de Telefono:</label>
+                                <input type="number" name="txtTelefono" id="txtTelefono">
+                
+                                <label for="txtCorreo">Correo Electronico:</label>
+                                <input type="text" name="txtCorreo" id="txtCorreo">
+
+                                <label for="txtConsulta">Consulta sobre nuestros servicios:</label>
+                                <input type="text" name="txtConsulta" id="txtConsulta">
+
+                                <input type="submit" name="btnEnviar" id="btnEnviar" class="btn btn-verde">
+                                <input type="reset" name="btnLimpiar" id="btnLimpiar" class="btn btn-rojo">
+
+                                <h3 class="contacto-pd">Su consulta será respondida en 1 día hábil o menos.</h3>
+                                </form>
+                        </table>
+                    </div>
+                </li>
+                <li class="contacto-der">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d587.6734223006354!2d-70.58059709646449!3d-33.569406417376214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d72c03d030c3%3A0x165fbd87ef131682!2sVargas%20Espinoza%20Jorge%20Cristian!5e0!3m2!1ses-419!2scl!4v1618793917593!5m2!1ses-419!2scl" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            
+        <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col  s12">
+                  <h5 class="white-text">Los Toros 0298, Puente Alto, Región Metropolitana</h5>
+                  <p class="grey-text text-lighten-4">fono:+569998866</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="principal.html">Pagina Principal</a></li>
+                    <li><a class="grey-text text-lighten-3" href="Iniciar.html">Iniciar Sesión</a></li>
+                    <li><a class="grey-text text-lighten-3" href="Productos.html">Productos</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2021 Todos los derechos reservados Jardinería
+              The Neighborhood
+              </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
